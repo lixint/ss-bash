@@ -21,9 +21,10 @@
 # 流量采样间隔,单位为秒
 INTERVEL=300
 # 指定Shadowsocks程序文件
-SSSERVER=ssserver
+SSSERVER=/root/shadowsocks/shadowsocks/ssserver.py
 
-SSSERVER_NAME=`basename $SSSERVER`
+#SSSERVER_NAME=`basename $SSSERVER`
+SSSERVER_NAME=ssserver
 
 TMPDIR=$DIR/tmp
 if [ ! -e $TMPDIR ]; then
@@ -32,7 +33,7 @@ if [ ! -e $TMPDIR ]; then
 fi
 
 USER_FILE=$DIR/ssusers
-JSON_FILE=$DIR/ssmlt.json
+JSON_FILE=/etc/shadowsocks.json
 TRAFFIC_FILE=$DIR/sstraffic
 
 SSSERVER_PID=$TMPDIR/ssserver.pid
