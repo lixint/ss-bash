@@ -20,7 +20,7 @@ centOS 6
 `yum update`  
 `yum install python-pip -y`  
 #搬瓦工  
-`#get https://bootstrap.pypa.io/get-pip.py`  
+`#wget https://bootstrap.pypa.io/get-pip.py`  
 `#sudo python get-pip.py`      
   
 `pip install shadowsocks`  
